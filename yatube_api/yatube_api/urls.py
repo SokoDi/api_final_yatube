@@ -12,8 +12,6 @@ urlpatterns = [
         TemplateView.as_view(template_name='redoc.html'),
         name='redoc'
     ),
-    path('auth/', include('djoser.urls')),
-    path('auth/', include('djoser.urls.jwt')),
 ]
 
 if settings.DEBUG:
@@ -23,4 +21,3 @@ if settings.DEBUG:
     urlpatterns += static(
         settings.STATIC_URL, document_root=settings.STATIC_ROOT
     )
-

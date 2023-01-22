@@ -11,6 +11,13 @@ router.register(
 router.register('v1/groups', GroupViewSet, basename='groups')
 router.register('v1/follow', FollowViewSet, basename='followers')
 
+
+jwt_urlpatterns = [
+    path('', include('djoser.urls')),
+    path('', include('djoser.urls.jwt')),
+]
+
 urlpatterns = [
     path('', include(router.urls)),
+    path('v1/', include(jwt_urlpatterns)),
 ]
