@@ -13,20 +13,20 @@ python -m venv env
 source env/Scripts/activate
 python -m pip install --upgrade pip
 ```
+```
 В зависимости от вашей IDE
 py -m venv env
 source env/Scripts/activate
 py -m pip install --upgrade pip
 ```
 ```
-- Установка зависимостей pip install -r requirements.txt
+Установка зависимостей pip install -r requirements.txt
 ```
 ```
-- Выполнить миграции: python manage.py migrate
+Выполнить миграции: python manage.py migrate
 ```
 ```
-- Запуск проекта: python manage.py runserver
-```
+Запуск проекта: python manage.py runserver
 ```
 ### Примеры api запросов
 - `api/v1/jwt/create/` (POST): передаём логин и пароль, получаем токен.
@@ -39,7 +39,7 @@ py -m pip install --upgrade pip
 - `api/v1/posts/{post_id}/comments/` (GET, POST): получаем список всех комментариев поста с `id=post_id` или создаём новый, указав `id` поста, который хотим прокомментировать.
 - `api/v1/posts/{post_id}/comments/{comment_id}/` (GET, PUT, PATCH, DELETE): получаем, редактируем или удаляем комментарий по `id` у поста с `id=post_id`.
 - `api/v1/posts/follw/` (GET, POST): Возвращает все подписки пользователя, подписка на автора .
-```
-```
 ### Автор
+```
 Соколов Дмитрий
+```
