@@ -4,8 +4,6 @@ from rest_framework.pagination import LimitOffsetPagination
 
 from api.mixin import PackMix
 from api.permissions import IsAuthorOrReadOnly
-from api.serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
-                          PostSerializer)
 from api.serializers import (CommentSerializer, FollowSerializer,
                              GroupSerializer, PostSerializer)
 from posts.models import Group, Post
