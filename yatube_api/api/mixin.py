@@ -1,7 +1,7 @@
 from rest_framework import mixins, viewsets
 
 
-class PackMix(mixins.CreateModelMixin,
+class PackMixin(mixins.CreateModelMixin,
               mixins.ListModelMixin,
               viewsets.GenericViewSet):
     pass
